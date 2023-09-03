@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akriti's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/aec7e72120.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">              
+            <nav>
+                <ul id="unorder">
+                    <li><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;<a href="#header">Home </a></li>
+                    <li><i class="fa-solid fa-circle-info"></i>&nbsp;&nbsp;&nbsp;<a href="#about">About</a></li>              
+                    <li><i class="fa-solid fa-award"></i>&nbsp;&nbsp;&nbsp;<a href="#certificates">Certificates</a></li>
+                    <li><i class="fa-solid fa-gears"></i>&nbsp;&nbsp;&nbsp;<a href="#languages">Languages</a></li>
+                    <li><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;&nbsp;<a href="#services">Services</a></li>
+                    <li><i class="fa-solid fa-file"></i>&nbsp;&nbsp;&nbsp;<a href="#contact">Resume</a></li>                   
+                    <li><i class="fa-regular fa-address-book"></i>&nbsp;&nbsp;&nbsp;<a href="#contact">Contact</a></li>                   
+                    <!--<i class="fa-solid fa-xmark" onclick="closemenu()"></i> -->
+                </ul>
+                
+                <!--<i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>  -->
+            </nav>    
+        </div>
+    </div>
+    <div class="name">
+        Akriti Gupta
+        <div class="header-text">
+            <h1>I'm a passionate <span>
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>  
+            <span id="element"></span>
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('#element', 
+                {
+                strings: ['Software Developer,'],
+                typeSpeed: 50,
+                });
+            </script>
+            </span><br>innovating with elegant and efficient code . . . .</h1>
+        </div>
+    </div>
+<!--About Section-->
+<div id="about">
+    <div class="container">        
+        <div class="row">
+            <div class="about-col-1">
+                <img src="MyImage(Black).jpg" width="250px" height="320px" class="MyImage">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me &nbsp;&nbsp;<!--<u style="text-underline-offset: 4px; text-decoration-thickness: 0px;"></u>-->
+                <i class="fa-solid fa-person-dress" ></i>
+                </h1>
+                
+                <p>Ambitious and dedicated student with a strong academic foundation, practical experience and a thirst for innovation and learning, ready to contribute to the ever-evolving tech landscape. </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>                    
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python,Java,C</li>
+                        <li><span>Competitive Programming </span><br>Problem Solving,Data Structures,Algorithms </li>
+                        <li><span>Web developement</span><br>Html,Css,Javascript</li>
+                        <li><span>DataBase Management System</span><br>MySQL</li>
+                        <li><span>Object Oriented Programming</span></li>
+                        <li><span>Machine Learning</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education"> 
+                    <ul>
+                        <li><span>Pranveer Singh Institute of Technology</span><br>B.Tech Computer Science and Engineering <br>(2020-2024)<br>8.3/10 </li>
+                        <li><span>Dr. Virendra Swarup Education Centre</span><br> Intermediate <br>(2019-2020)  <br>90%</li>
+                        <li><span>Dr. Virendra Swarup Education Centre</span><br> HighSchool<br> (2017-2018) <br>91%</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>CodeClause </span><br>Python developement Intern <br> (April 2023 - May 2023) </li>                                               
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Services Section-->
+<div id="services">
+    <div class="container"> 
+        <h1 class="sub-title">My Services     &nbsp;&nbsp;<i class="fa-solid fa-globe" style="font-size: 40px;"></i></h1>        
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>Web development</h2>
+                <p>using HTML,CSS,Javascript</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>AI and ML models</h2>
+                <p>using python</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p>Using MySQL</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Competitive Programming and Problem Solving</h2>
+                <p>Data Structures and Algorithms,Object Oriented Programming</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<!-- Certificates Section-->
+<div id="certificates">
+    <div class="container">       
+        <h1 class="sub-title">Certificates & Achievements  &nbsp;&nbsp;<i class="fa-solid fa-trophy" style="font-size: 40px;"></i></h1>
+        <div class="certificate-list">           
+            <div class="certificate1">
+                <img src="Python_for_everybody.png" alt="" width="100px" height="250px" >               
+                <div class="layer">    
+                    <a href="https://www.coursera.org/account/accomplishments/verify/8CNSTCFZFEG6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target=”_blank”>
+                    <i class="fa-solid fa-link"></i>    
+                    </a>         
+                    <h3>Programming for Everybody (Getting Started with Python)</h3>                                    
+                </div>
+            </div>
+            <div class="certificate1">
+                <img src="hackerrank.png" alt="" width="100px" height="250px">
+                <div class="layer">
+                    <a href="https://www.hackerrank.com/certificates/de674284d8d0" target=”_blank”>
+                    <i class="fa-solid fa-link"></i>
+                    </a>
+                    <h3>Problem Solving (Basic) Certificate</h3>            
+                </div>
+            </div>
+            <div class="certificate1">
+                <img src="University_of_michingan.png" alt="" width="100px" height="250px">
+                <div class="layer">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/CDSVZQCNGU6G?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target=”_blank”>
+                    <i class="fa-solid fa-link"></i>
+                    </a>
+                    <h3>Python Data Structures</h3>
+                </div>
+            </div>
+            <div class="certificate1">
+                <img src="coursera_logo.png" alt="" width="100px" height="250px">
+                <div class="layer">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/8CNSTCFZFEG6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target=”_blank”>
+                    <i class="fa-solid fa-link"></i>
+                    </a>
+                    <h3>Using Python to Access Web Data</h3>
+                </div>
+            </div>
+            <div class="certificate1">
+                <img src="infytq.png" alt="" width="100px" height="250px">
+                <div class="layer">
+                    <a href="https://drive.google.com/file/d/1328qWcNVAaqwN94kcVAjLFohx7iA_mfD/view" target=”_blank”>
+                    <i class="fa-solid fa-link"></i>
+                    </a>
+                    <h3>Programming Fundamentals using Python - Part 1</h3>
+                </div>
+            </div>
+            <div class="certificate1">
+                <img src="game_development.png" alt="" width="100px" height="250px">
+                <div class="layer">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/KSS45NEEVTUC?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project" target=”_blank”>
+                    <i class="fa-solid fa-link"></i>
+                    </a>
+                    <h3>Introduction to Basic Game Development using Scratch</h3>
+                </div>
+            </div>     
+            <div class="certificate1">
+                <img src="hackerrankLogo.jpeg" alt="" width="100px" height="250px">
+                <div class="layer">
+                    <a href="https://www.hackerrank.com/certificates/1272f1583e84" target=”_blank”>
+                    <i class="fa-solid fa-link"></i>
+                    </a>
+                    <h3>Problem Solving (Intermediate) Certificate</h3>                                   
+                </div>
+            </div>         
+            <div class="certificate1">
+                <img src="springboard.png" alt="" width="100px" height="250px">
+                <div class="layer">
+                    <a href="https://drive.google.com/file/d/1zPjVyFf9KpcVqnfq23eIRL5-txCIKsQH/view" target=”_blank”>
+                    <i class="fa-solid fa-link"></i>
+                    </a>
+                    <h3>Programming Fundamentals using Python - Part 2</h3>                   
+                </div>
+            </div>
+        </div>        
+    </div>
+    <a href="#" class="btn"><b>More</b></a>
+</div>
+
+<!--Languages------>
+<div id="languages">
+    <div class="container">        
+        <h1 class="sub-title">Programming Languages <i class="fa-solid fa-gears" style="font-size: 40px;"></i></h1>
+        <div class="languages-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-c"></i>
+                <h2>C</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>CSS</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>MySQL</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-----Contact----->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title"><i class="fa-regular fa-id-badge" ></i> &nbsp;Contact Me</h1>
+        <div class="row">
+            <div class="contact-left">    
+                <p><i class="fa-solid fa-envelope"></i> &nbsp;akritigupta2001@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>&nbsp;(+91)6387347451</p>
+                <p><i class="fa-solid fa-location-dot"></i>&nbsp;Kanpur, Uttar Pradesh, India</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/akriti-gupta-00612321b/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Akriti2510" target="_blank"  class="github"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.hackerrank.com/2001640100031_CS?hr_r=1" target="_blank" class="hackerrank"><i class="fa-brands fa-hackerrank"></i></a>
+                    <a href="https://www.instagram.com/akritigupta2001/?next=%2F" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Akriti Gupta_67_Present_Resume.pdf" download class="btn btn2"><i class="fa-solid fa-download">&nbsp;&nbsp;</i><b>Download Resume</b></a>
+            </div>
+            <div class="contact-right">
+                <form action="" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"><b>Submit</b></button>
+                </form>
+                <span id="msg"></span> 
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="copyright">
+        <p>© Copyright 2023. All Rights Reserved</p>
+        <P> Designed by Akriti Gupta</P>        
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbziUE3xvUHajaHOOerfI1MbC12zkfG8W0KWFemloEYvKxPfCjsN-ApWRHen0odmbiT3TA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Submitted Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
